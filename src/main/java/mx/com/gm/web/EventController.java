@@ -16,11 +16,13 @@ import org.springframework.http.HttpStatus;
 import mx.com.gm.domain.Event;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/api")
 @Slf4j
 public class EventController {
