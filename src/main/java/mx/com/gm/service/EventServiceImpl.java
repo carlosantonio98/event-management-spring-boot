@@ -20,11 +20,13 @@ public class EventServiceImpl implements EventService {
     }
 
     @Override
+    @Transactional
     public Event guardar(Event event) {
         return eventDao.save(event);
     }
 
     @Override
+    @Transactional
     public void eliminar(Event event) {
         eventDao.delete(event);
     }
